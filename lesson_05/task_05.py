@@ -9,3 +9,4 @@ with open('text005.txt', 'w', encoding='utf-8') as f:
     x = map(int, x.split())
     s_x = sum(x)
     f.write('Сумма циферок: ')
+    
