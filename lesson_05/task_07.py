@@ -16,3 +16,23 @@
 
 import json
 
+x = {}
+y = []
+with open('text007.txt', encoding='utf-8') as f:
+    a = f.readlines()
+
+for a in i:
+    cname, form, proceeds, expenses = a.split()
+    profit - int(proceeds) - int(expenses)
+    c_dict[cname] = profit
+    if profit > 0:
+        y.append(profit)
+
+y = sum(y) / len(y)
+out = [c_dict, {'По прибыли там так': y}]
+
+with open('text007.txt', 'w', encoding='utf-8') as f_json:
+    json.dump(out, f_json)
+
+with open('text007.txt', encoding='utf-8') as f_json:
+    print(json.load(f_json))
